@@ -1,5 +1,10 @@
 
 # markdown cheat sheet
+
 https://www.markdownguide.org/cheat-sheet/
-did
+
+https://dillinger.io/
+
+https://stackedit.io/app#
+
 
