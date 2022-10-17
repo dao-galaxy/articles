@@ -60,7 +60,7 @@ DAO(Decentralized Autonomous Organization)是基于区块链技术一种组织�
 - Dao实现了生产力的充分利用，复制
 
 
-## Dao运作的共识与误区
+## Dao运作的常识与误区
 
 - Dao的特质：无特权，不可作恶，自给自足。
 - 我们不能拥有或者统治一个Dao，我们只能参与一个Dao。
