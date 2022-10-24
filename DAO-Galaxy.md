@@ -14,10 +14,10 @@
 >
 > DID DAO 自身是一个  [ DAO 孵化器、Web3 项目工厂、DApp Store ];
 >
-> DID DAO 广场（DAO Square）是 diddao.io 网站页面内的一个功能板块，致力于为 DAO 寻找生产力，为生产力寻找 DAO。
+> DAO 广场（DAO Square）是 diddao.io 网站内的一个功能板块，致力于为 DAO 寻找生产力，为生产力寻找 DAO。
 >
 
-## DAO Galaxy 系统工程的指导思想
+## DAO Galaxy 的指导思想
 
 #### 1）区块链技术的核心价值是建立新的、更先进的生产关系；
 
