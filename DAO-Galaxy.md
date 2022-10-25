@@ -6,7 +6,7 @@
 >
 > DAO Galaxy 是一个以DAO的范式进行运作的生态系统，是一个致力于构建 Web3 新世界的系统工程，是以程序员为主要生产者、以互联网流量为主要生产资料的经济系统。
 > 
-> DAO Galaxy 由 DID 注册器、DAO 广场、面向 DID 与 DAO 的公链 (YaETH)、去中心化存储网络（YaStorage）、以及跨链桥 (YaBridge) 构成。
+> DAO Galaxy 由 DID 注册器、去中心化钱包、DAO 广场、面向 DID 与 DAO 的公链 (YaETH)、去中心化存储网络（YaStorage）、以及跨链桥 (YaBridge) 构成。
 > 
 > DID DAO 是 DAO Galaxy 系统工程中孵化出的第一个 DAO;
 >
