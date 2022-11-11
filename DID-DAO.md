@@ -6,7 +6,8 @@
 
 
 ## v 0.2
-![image](https://user-images.githubusercontent.com/32976079/201330998-95d4acc8-13bf-4b2c-96c3-0f51ec907774.png)
+
+![image](https://user-images.githubusercontent.com/32976079/201339529-75c3991f-57b5-458e-bef0-a014ffedb2f7.png)
 
 
 ...
