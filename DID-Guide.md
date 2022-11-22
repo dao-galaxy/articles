@@ -34,5 +34,5 @@ GalaxyDID的建设者不认为用户该为他的DID续费，这样的DID系统�
 
 GalaxyDID作为DAO Galaxy （一个构建WEB3的系统工程）第一个基础设施，将通过打通和建设两种途径来实现其目标。
 
-GalaxyDID正在Goerli测试网上进行测试。该DID系统也将以DAO的范式进行运作。欢迎WEB3的建设者加入我们的以下工会：开发者工会，运营工会，内容工会。
+GalaxyDID正在Goerli测试网上进行测试。该DID系统也将以DAO的范式进行运作。欢迎WEB3的建设者加入DIDDAO的以下工会：开发者工会，运营工会，内容工会。
 
