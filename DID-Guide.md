@@ -45,5 +45,5 @@ Galaxy DID 的建设者不认为用户应该为他的 DID 续费，这样的 DID
 
 Galaxy DID 作为 DAO Galaxy （一个构建WEB3的系统工程）第一个基础设施，将通过打通和建设两种途径来实现其目标。
 
-Galaxy DID 正在 Goerli 测试网上进行测试，以 DID DAO 的范式进行运作。欢迎 Builder 们 加入 DID DAO 的【开发者工会，运营工会，内容工会】。
+Galaxy DID 正在 Goerli 测试网上进行测试，以 DID DAO 的范式进行运作。欢迎 Builder 们加入 DID DAO 的【开发者工会，运营工会，内容工会】。
 
