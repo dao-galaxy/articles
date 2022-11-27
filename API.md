@@ -43,6 +43,24 @@ timestamp 为 2022-11-19 的格式，返回JSON
 }
 ```
 
+#### 4) 获取某个 DID 的 JSON Metadata
+
+```shell
+curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180240231135487841825057814170914789717826776595528464
+
+{
+  "name" : "buffalo.did",
+  "symbol" : "GalaxyDID",
+  "description" : "It is a did nft",
+  "image" : "https://www.larvalabs.com/public/images/cryptopunks/punk7804.png",
+  "externalUrl" : "https://diddao.io",
+  "properties" : null,
+  "attributes" : null,
+  "collection" : null
+}
+```
+
+
 
 #### a) eth_call
 
