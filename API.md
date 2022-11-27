@@ -44,4 +44,19 @@ timestamp 为 2022-11-19 的格式，返回JSON
 ```
 
 
+#### a) eth_call
+
+```shell
+curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --request POST --header "Content-Type: application/json" --data '{
+    "jsonrpc":"2.0",
+    "method":"eth_call",
+    "params":[
+        {
+            "to":"0x966a31ff3eb02144369887d4bd3a9238a7ff925c",
+            "data":"0xd56aae550000000000000000000000000000000000000000000000000000000000000008"
+        }
+    ],
+    "id":1
+}'
+```
 
