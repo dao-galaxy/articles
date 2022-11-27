@@ -1,6 +1,6 @@
 # DAO Galaxy--构建 Web3 世界的系统工程
 
-更多信息，可参考 [DAO Galaxy Whitepaper](DAO-Galaxy.md) 与 [DID DAO测试网](https://goerli.diddao.io/)
+更多信息，可参考 [Whitepaper](DAO-Galaxy.md) 与 [DID DAO测试网](https://goerli.diddao.io/)
 
 > 当前，DAO Galaxy 的目标愿景、整体设计方案已基本确立，具体细节正在推进与完善中，包括 文档材料、产品设计、测试系统 等，期待更多的 Builder 加入我们。
 
