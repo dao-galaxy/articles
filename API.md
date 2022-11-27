@@ -3,8 +3,9 @@
 
 #### 1) 获取某个 owner 拥有的 DID 列表
 
+```shell
 curl 'http://8.136.211.11/didNode/getDidNodeListByAddress?owner=0x6dcd82959e68f41b3a365c40f57b9a54cdd230e1'
-
+```
 
 #### 2) 获取某个 DID 当前可领取的分红额度
 
@@ -24,7 +25,23 @@ curl http://8.136.211.11/didNode/userCheckIn --request POST --header "Content-Ty
 }'
 ```
 
+#### 4) 获取某个 DID 历史打卡信息
 
+```shell
+curl 'http://8.136.211.11:10020/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
+```
+
+timestamp 为 2022-11-19 的格式，返回JSON 
+
+```shell
+{
+ "timestamp" : 1668826514, //node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的时间戳；
+ "gasBalance" : "10000000000000000", // node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的Gas权重值
+ "dividentAmount" : "6666666666666", // node 在 2022-11-19 那一天分到的钱数量；
+ "platformIncome" : "2000000000000000" // 2022-11-19 那一天的平台收入
+ "totalCheckin" : 6 // 2022-11-19 那一天打卡的人数（DidNode数）
+}
+```
 
 
 
