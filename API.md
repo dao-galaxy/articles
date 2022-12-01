@@ -4,7 +4,59 @@
 #### 1) 获取某个 owner 拥有的 DID 列表
 
 ```shell
-curl 'http://8.136.211.11/didNode/getDidNodeListByAddress?owner=0x6dcd82959e68f41b3a365c40f57b9a54cdd230e1'
+curl https://goerli.diddao.io/api/didNode/getDidNodeListByAddress/0xf07149221a4c85c26fecc560c5970ec1415f6735
+
+{
+    "status":200,
+    "message":"SUCCESS",
+    "data":[
+        {
+            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
+            "node":"0x8fdbedec4e9ea7c8743ba6af3b8242bf7b3fbb47b8cb9dc27b0433eea62925e7",
+            "id":12,
+            "parentNode":"0x8a74fc6994ef0554dd9cc95c3391f9cd66152031a0c1feacb835e3890805af5f",
+            "expire":-1,
+            "ttl":0,
+            "transfer":1669180128,
+            "name":"danoky",
+            "defaultDidNode":true
+        },
+        {
+            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
+            "node":"0xef71356707b86d41459d55baf7385bfbbb5b5e5322f8e8f9148665ae4a13e740",
+            "id":14,
+            "parentNode":"0x8a74fc6994ef0554dd9cc95c3391f9cd66152031a0c1feacb835e3890805af5f",
+            "expire":-1,
+            "ttl":0,
+            "transfer":1669193904,
+            "name":"danok21",
+            "defaultDidNode":false
+        },
+        {
+            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
+            "node":"0x6650ec5c32f3d1d68d1c05ecc732118de4e82f027fcd7d6672df13c12de656da",
+            "id":16,
+            "parentNode":"0xb5f2bbf81da581299d4ff7af60560c0ac854196f5227328d2d0c2bb0df33e553",
+            "expire":-1,
+            "ttl":0,
+            "transfer":1669287840,
+            "name":"danoky",
+            "defaultDidNode":false
+        },
+        {
+            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
+            "node":"0x8b21efeb25303dcc086f181c72e9988c28d9feec7aefa2d1e8b99f68db6b2987",
+            "id":39,
+            "parentNode":"0x8a74fc6994ef0554dd9cc95c3391f9cd66152031a0c1feacb835e3890805af5f",
+            "expire":-1,
+            "ttl":0,
+            "transfer":1669621740,
+            "name":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "defaultDidNode":false
+        }
+    ]
+}
+ 
 ```
 
 #### 2) 获取某个 DID 当前可领取的分红额度
