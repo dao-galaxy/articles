@@ -81,11 +81,7 @@ curl http://8.136.211.11/didNode/userCheckIn --request POST --header "Content-Ty
 
 ```shell
 curl 'http://8.136.211.11:10020/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
-```
 
-timestamp 为 2022-11-19 的格式，返回JSON 
-
-```shell
 {
  "timestamp" : 1668826514, //node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的时间戳；
  "gasBalance" : "10000000000000000", // node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的Gas权重值
@@ -111,7 +107,6 @@ curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180
   "collection" : null
 }
 ```
-
 
 
 #### a) eth_call
