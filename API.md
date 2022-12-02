@@ -101,7 +101,17 @@ curl https://goerli.diddao.io/api/didNode/userCheckin --request POST --header "C
 #### 4) 获取某个 DID 历史打卡信息
 
 ```shell
-curl 'https://goerli.diddao.io/api/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
+// curl 'https://goerli.diddao.io/api/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
+
+curl https://goerli.diddao.io/api/api/getDividentInfo --request POST --header "Content-Type: application/json" --data \
+'
+{
+    "node":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+    "timeStamp":"2022-11-19"
+}
+'
+
+{"status":10000007,"message":"当日无打卡记录","data":null}
 
 {
  "timestamp" : 1668826514, //node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的时间戳；
@@ -112,20 +122,20 @@ curl 'https://goerli.diddao.io/api/getDividentInfo?node=0x033549da90d902eebceded
 }
 ```
 
-#### 4) 获取某个 DID 的 JSON Metadata
+#### 5) 获取某个 DID 的 JSON Metadata
 
 ```shell
 curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180240231135487841825057814170914789717826776595528464
 
 {
-  "name" : "buffalo.did",
-  "symbol" : "GalaxyDID",
-  "description" : "It is a did nft",
-  "image" : "https://www.larvalabs.com/public/images/cryptopunks/punk7804.png",
-  "externalUrl" : "https://diddao.io",
-  "properties" : null,
-  "attributes" : null,
-  "collection" : null
+    "name" : "buffalo.did",
+    "symbol" : "GalaxyDID",
+    "description" : "It is a did nft",
+    "image" : "https://www.larvalabs.com/public/images/cryptopunks/punk7804.png",
+    "externalUrl" : "https://diddao.io",
+    "properties" : null,
+    "attributes" : null,
+    "collection" : null
 }
 ```
 
@@ -133,7 +143,9 @@ curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180
 #### a) eth_call
 
 ```shell
-curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --request POST --header "Content-Type: application/json" --data '{
+curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --request POST --header "Content-Type: application/json" --data \
+'
+{
     "jsonrpc":"2.0",
     "method":"eth_call",
     "params":[
@@ -143,6 +155,7 @@ curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --requ
         }
     ],
     "id":1
-}'
+}
+'
 ```
 
