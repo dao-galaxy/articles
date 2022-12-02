@@ -62,25 +62,46 @@ curl https://goerli.diddao.io/api/didNode/getDidNodeListByAddress/0xf07149221a4c
 #### 2) 获取某个 DID 当前可领取的分红额度
 
 ```shell
-curl http://8.136.211.11/didNode/getLatestDivident --request POST --header "Content-Type: application/json" --data '{
-    "signature":"0x4a3e1c9108720e8c7c6c5d824ffe5b7c544a6e017300511c597aab2f113610e37494e5908e364bde235dc28f902d1ce86c767cb13291aa13adcb930b5296a5f11c", 
-    "node":"0x4e772f62035453f381d9e8495f65ea4d5c90168c61878c755d8b2c9170e259d2"
-}'
+curl https://goerli.diddao.io/api/didNode/getLatestDivident --request POST --header "Content-Type: application/json" --data \
+'
+{
+    "node":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+    "signature":"0xad9cf1328fb80a97117cec172e65288161ac9d9f966e5092cc5c42022fbf65f461d80f92b75278c14bdc85b8d2e3d9afa11d3f99c4930d02fff4bd3d1c84f01c1b"
+}
+'
+
+{
+    "status":200,
+    "message":"SUCCESS",
+    "data":{
+        "owner":"0x429ebd9365061dabb853de89c134f9b79468a952",
+        "node":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+        "time":19328,
+        "signature":"0x8ee94d8e7874708abbfcf0f588290399a6928b6f7ce9f548ae3296c52d1269121065970830f0e1559782242273d10e1c73047f99ad51af1bb62c19913ed3c6db1b",
+        "gasBalance":"100000000000000000000",
+        "dividend":"0"
+    }
+}
 ```
 
 #### 3) 某个 DID 登陆并打卡
 
 ```shell
-curl http://8.136.211.11/didNode/userCheckIn --request POST --header "Content-Type: application/json" --data '{
-"signature":"0x4a3e1c9108720e8c7c6c5d824ffe5b7c544a6e017300511c597aab2f113610e37494e5908e364bde235dc28f902d1ce86c767cb13291aa13adcb930b5296a5f11c", 
-"node":"0x4e772f62035453f381d9e8495f65ea4d5c90168c61878c755d8b2c9170e259d2"
-}'
+curl https://goerli.diddao.io/api/didNode/userCheckin --request POST --header "Content-Type: application/json" --data \
+'
+{
+    "signature":"0x5efa28045b3ee5a5c977a1357d647f53f62ef7a4d0995ddb7f7807942fc4cdf927ba9b41d327afa90b8af519084be6e23525968f6348fe034f78e8e87346ebe21b", 
+    "node":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10"
+}
+'
+
+{"status":10000004,"message":"已签到,请勿重复签到","data":null}
 ```
 
 #### 4) 获取某个 DID 历史打卡信息
 
 ```shell
-curl 'http://8.136.211.11:10020/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
+curl 'https://goerli.diddao.io/api/getDividentInfo?node=0x033549da90d902eebcededec7286e6a5f4e7b23484d4b06c20bd6ed60e05d4ef&timestamp=2022-11-19'
 
 {
  "timestamp" : 1668826514, //node 在 2022-11-19 那一天第一次打卡成功时的，系统记录下的时间戳；
