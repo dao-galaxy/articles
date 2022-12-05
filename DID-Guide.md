@@ -51,7 +51,7 @@ Galaxy DID 的注册费收入将计入公开的社区账本，DID持有者每天
 
 下面是注册DID的Transaction截图，很清晰地展示了在注册DID的同时释放FC。
 
-图片
+C:\Users\Administrator\Desktop\公众号写作素材\微信图片_20221205134406
 
 
 DID 系统的两种成功路径
