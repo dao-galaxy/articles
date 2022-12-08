@@ -155,6 +155,55 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 	"signature":"0x5efa28045b3ee5a5c977a1357d647f53f62ef7a4d0995ddb7f7807942fc4cdf927ba9b41d327afa90b8af519084be6e23525968f6348fe034f78e8e87346ebe21b"
 }
 '
+
+#### 7)获取did订单列表
+curl https://goerli.diddao.io/api/order/orderList --request POST --header "Content-Type: application/json" --data \
+'
+{
+  "sortField":"time" // 排序字段,
+  "sortRule":"asc" // 排序规则,asc -> 正序，desc -> 倒叙,
+  "pageSize":20, // 每一页 60 个
+  "pageNumber":3, // 第 3 页（第一页从1开始）
+  "didType":"did" // did类型：did、dao,
+  "searchName":"alibaba" // 搜索包含hello的did挂单
+}
+
+返回结果：
+
+{
+  "status": 200,
+  "message": "SUCCESS",
+  "data": {
+    "records": [
+      {
+        "id": 1,
+        "maker": "0xb6B78b6F7C461d9D33d5D8c9f9366215C416AeB7",
+        "taker": "0xb6B78b6F7C461d9D33d5D8c9f9366215C416AeB7",
+        "startTime": 1670371622,
+        "endTime": 1670371623,
+        "makerNonce": "123",
+        "tokenId": "0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+        "ethPrice": "1000000000000000000",
+        "sell": 1,
+        "signature": "我是签名",
+        "orderStatus": 1,
+        "didType": "did",
+        "imageUrl": "https://goerli.diddao.io/img/logo_galaxy_white.1fd71fd1.png"
+      }
+    ],
+    "total": 4,
+    "size": 10,
+    "current": 1,
+    "orders": [
+      
+    ],
+    "optimizeCountSql": true,
+    "searchCount": true,
+    "countId": null,
+    "maxLimit": null,
+    "pages": 1
+  }
+}
 ```
 
 #### a) eth_call
