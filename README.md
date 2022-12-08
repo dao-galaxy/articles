@@ -40,5 +40,4 @@
 
 - 4）场域，无处不在，习以为常，真正改变世界。
 
-![image](https://user-images.githubusercontent.com/32976079/206478896-d2eeaf83-41f0-438c-b921-78f636064d10.png)
-
+![image](https://user-images.githubusercontent.com/32976079/206479892-0f3612ca-c094-4d42-a5d2-3a2790b9903e.png)
