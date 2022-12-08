@@ -160,7 +160,7 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 curl https://goerli.diddao.io/api/order/orderList --request POST --header "Content-Type: application/json" --data \
 '
 {
-  "sortField":"time" // 排序字段,
+  "sortField":"start_time" // 排序字段 时间： start_time, 价格：eth_price,
   "sortRule":"asc" // 排序规则,asc -> 正序，desc -> 倒叙,
   "pageSize":20, // 每一页 60 个
   "pageNumber":3, // 第 3 页（第一页从1开始）
