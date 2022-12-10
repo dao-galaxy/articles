@@ -140,6 +140,7 @@ curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180
 ```
 
 #### 6) 挂单售卖 DID-NFT
+
 ```shell
 curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Content-Type: application/json" --data \
 '
@@ -156,7 +157,12 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 }
 '
 
+```
+
+
 #### 7)获取did订单列表
+
+```shell
 curl https://goerli.diddao.io/api/order/orderList --request POST --header "Content-Type: application/json" --data \
 '
 {
@@ -206,6 +212,7 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
   }
 }
 ```
+
 
 #### a) eth_call
 
