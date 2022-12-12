@@ -188,7 +188,7 @@ curl https://goerli.diddao.io/api/order/getOrderInfo?tokenId=0xc6cbe29b02227ba1b
         "signature": "我是签名",
         "orderStatus": 1,
         "didType": "did",
-        "imageUrl": "https://goerli.diddao.io/img/logo_galaxy_white.1fd71fd1.png"
+        "imageUrl": "https://goerli.diddao.io/img/logo_galaxy_white.1fd71fd1.png" // 后续统一处理一下，现在不做处理。
       }
   }
 }
@@ -208,13 +208,15 @@ curl https://goerli.diddao.io/api/order/getOrderInfo?tokenId=0xc6cbe29b02227ba1b
 curl https://goerli.diddao.io/api/order/orderList --request POST --header "Content-Type: application/json" --data \
 '
 {
-  "sortField":"start_time" // 排序字段 时间： start_time, 价格：eth_price,
-  "sortRule":"asc" // 排序规则,asc -> 正序，desc -> 倒叙,
-  "pageSize":20, // 每一页 60 个
-  "pageNumber":3, // 第 3 页（第一页从1开始）
-  "didType":"did" // did类型：did、dao,
-  "searchName":"alibaba" // 搜索包含hello的did挂单
+    "orderType":"fixedPrice",
+    "sortField":"start_time" // 排序字段 时间： start_time, 价格：eth_price,
+    "sortRule":"asc" // 排序规则,asc -> 正序，desc -> 倒叙,
+    "pageSize":20, // 每一页 60 个
+    "pageNumber":3, // 第 3 页（第一页从1开始）
+    "didType":"did" // did类型：did、dao,
+    "searchName":"alibaba" // 搜索包含hello的did挂单
 }
+'
 
 返回结果：
 
@@ -238,19 +240,22 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
         "orderStatus": 1,
         "didType": "did",
         "imageUrl": "https://goerli.diddao.io/img/logo_galaxy_white.1fd71fd1.png"
-      }
+      },
+      ...
+      ...
+      ...
     ],
     "total": 4,
-    "size": 10,
-    "current": 1,
-    "orders": [
+    "size": 20,
+    "current": 1, // 后端代码库生成的，无法重命名为pageNumber
+    "orders": [   // 前端不要理会这个字段，后端代码库生成的
       
     ],
-    "optimizeCountSql": true,
-    "searchCount": true,
-    "countId": null,
-    "maxLimit": null,
-    "pages": 1
+    "optimizeCountSql": true, // 前端不要理会这个字段，后端代码库生成的
+    "searchCount": true, // 前端不要理会这个字段，后端代码库生成的
+    "countId": null, // 前端不要理会这个字段，后端代码库生成的
+    "maxLimit": null, // 前端不要理会这个字段，后端代码库生成的
+    "pages": 1 // 前端不要理会这个字段，后端代码库生成的
   }
 }
 ```
