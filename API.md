@@ -169,8 +169,6 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 
 ```shell
 curl https://goerli.diddao.io/api/order/getOrderInfo?tokenId=0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10 --request GET 
-'
-
 
 {
   "status": 200,
@@ -202,9 +200,6 @@ curl https://goerli.diddao.io/api/order/getOrderInfo?tokenId=0xc6cbe29b02227ba1b
 }
 
 ```
-
-
-
 
 
 #### 8)获取did订单列表
