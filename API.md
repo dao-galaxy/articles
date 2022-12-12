@@ -6,6 +6,8 @@
 ```shell
 curl https://goerli.diddao.io/api/didNode/getDidNodeListByAddress/0xf07149221a4c85c26fecc560c5970ec1415f6735
 
+返回值
+
 {
     "status":200,
     "message":"SUCCESS",
@@ -70,6 +72,8 @@ curl https://goerli.diddao.io/api/didNode/getLatestDivident --request POST --hea
 }
 '
 
+返回值
+
 {
     "status":200,
     "message":"SUCCESS",
@@ -95,6 +99,8 @@ curl https://goerli.diddao.io/api/didNode/userCheckin --request POST --header "C
 }
 '
 
+返回值
+
 {"status":10000004,"message":"已签到,请勿重复签到","data":null}
 ```
 
@@ -111,6 +117,8 @@ curl https://goerli.diddao.io/api/api/getDividentInfo --request POST --header "C
 }
 '
 
+返回值
+
 {"status":10000007,"message":"当日无打卡记录","data":null}
 
 {
@@ -126,6 +134,8 @@ curl https://goerli.diddao.io/api/api/getDividentInfo --request POST --header "C
 
 ```shell
 curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180240231135487841825057814170914789717826776595528464
+
+返回值
 
 {
     "name" : "buffalo.did",
@@ -145,18 +155,20 @@ curl https://goerli.diddao.io/api/metadata/goerli/did/89918177947327675033248180
 curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Content-Type: application/json" --data \
 '
 {
-        "orderType":"fixedPrice",
-	"maker":"0x12345",
-	"taker":"0x00000",
-	"startTime":"1670394431",
-	"endTime":"1670394431",
-	"makerNonce":"63",
-	"tokenId":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
-	"ethPrice":"1000000000000000000", // 1 ETH
-	"sell":true / false,
-	"signature":"0x5efa28045b3ee5a5c977a1357d647f53f62ef7a4d0995ddb7f7807942fc4cdf927ba9b41d327afa90b8af519084be6e23525968f6348fe034f78e8e87346ebe21b"
+    "orderType":"fixedPrice",
+    "maker":"0x12345",
+    "taker":"0x00000",
+    "startTime":"1670394431",
+    "endTime":"1670394431",
+    "makerNonce":"63",
+    "tokenId":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+    "ethPrice":"1000000000000000000", // 1 ETH
+    "sell":true / false,
+    "signature":"0x5efa28045b3ee5a5c977a1357d647f53f62ef7a4d0995ddb7f7807942fc4cdf927ba9b41d327afa90b8af519084be6e23525968f6348fe034f78e8e87346ebe21b"
 }
 '
+
+返回值
 
 {"status":200,"message":"","data":true}
 
@@ -169,6 +181,8 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 
 ```shell
 curl https://goerli.diddao.io/api/order/getOrderInfo?tokenId=0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10 --request GET 
+
+返回值
 
 {
   "status": 200,
@@ -218,7 +232,7 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
 }
 '
 
-返回结果：
+返回值
 
 {
   "status": 200,
