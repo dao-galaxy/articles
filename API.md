@@ -165,7 +165,52 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 ```
 
 
-#### 7)获取did订单列表
+#### 7) 获取指定 DID-NFT 的订单信息 
+
+```shell
+curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Content-Type: application/json" --data \
+'
+{
+    "tokenId":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10"
+}
+'
+
+{
+  "status": 200,
+  "message": "SUCCESS",
+  "data": {
+      {
+        "id": 1,
+        "maker": "0xb6B78b6F7C461d9D33d5D8c9f9366215C416AeB7",
+        "taker": "0xb6B78b6F7C461d9D33d5D8c9f9366215C416AeB7",
+	 "name": "js",
+        "startTime": 1670371622,
+        "endTime": 1670371623,
+        "makerNonce": "123",
+        "tokenId": "0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10",
+        "ethPrice": "1000000000000000000",
+        "sell": 1,
+        "signature": "我是签名",
+        "orderStatus": 1,
+        "didType": "did",
+        "imageUrl": "https://goerli.diddao.io/img/logo_galaxy_white.1fd71fd1.png"
+      }
+  }
+}
+
+{
+  "status": 200,
+  "message": "SUCCESS",
+  "data": null
+}
+
+```
+
+
+
+
+
+#### 8)获取did订单列表
 
 ```shell
 curl https://goerli.diddao.io/api/order/orderList --request POST --header "Content-Type: application/json" --data \
