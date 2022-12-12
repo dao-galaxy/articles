@@ -34,28 +34,9 @@ curl https://goerli.diddao.io/api/didNode/getDidNodeListByAddress/0xf07149221a4c
             "name":"danok21",
             "defaultDidNode":false
         },
-        {
-            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
-            "node":"0x6650ec5c32f3d1d68d1c05ecc732118de4e82f027fcd7d6672df13c12de656da",
-            "id":16,
-            "parentNode":"0xb5f2bbf81da581299d4ff7af60560c0ac854196f5227328d2d0c2bb0df33e553",
-            "expire":-1,
-            "ttl":0,
-            "transfer":1669287840,
-            "name":"danoky",
-            "defaultDidNode":false
-        },
-        {
-            "owner":"0xf07149221a4c85c26fecc560c5970ec1415f6735",
-            "node":"0x8b21efeb25303dcc086f181c72e9988c28d9feec7aefa2d1e8b99f68db6b2987",
-            "id":39,
-            "parentNode":"0x8a74fc6994ef0554dd9cc95c3391f9cd66152031a0c1feacb835e3890805af5f",
-            "expire":-1,
-            "ttl":0,
-            "transfer":1669621740,
-            "name":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "defaultDidNode":false
-        }
+        ...
+        ...
+	...
     ]
 }
  
