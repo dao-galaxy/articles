@@ -212,7 +212,7 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
     "sortField":"start_time" // 排序字段 时间： start_time, 价格：eth_price,
     "sortRule":"asc" // 排序规则,asc -> 正序，desc -> 倒叙,
     "pageSize":20, // 每一页 60 个
-    "pageNumber":3, // 第 3 页（第一页从1开始）
+    "pageNum":3, // 第 3 页（第一页从1开始）
     "didType":"did" // did类型：did、dao,
     "searchName":"alibaba" // 搜索包含hello的did挂单
 }
@@ -247,7 +247,7 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
     ],
     "total": 4,
     "size": 20,
-    "current": 1, // 后端代码库生成的，无法重命名为pageNumber
+    "current": 1, // 后端代码库生成的，无法重命名为pageNum
     "orders": [   // 前端不要理会这个字段，后端代码库生成的
       
     ],
