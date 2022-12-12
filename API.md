@@ -168,12 +168,9 @@ curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Con
 #### 7) 获取指定 DID-NFT 的订单信息 
 
 ```shell
-curl https://goerli.diddao.io/api/order/createOrder --request POST --header "Content-Type: application/json" --data \
+curl https://goerli.diddao.io/api/order/getOrderInfo??tokenId=0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10 --request GET 
 '
-{
-    "tokenId":"0xc6cbe29b02227ba1bb49c0da438c639867e06abe8377a4e69e75a8b705b17b10"
-}
-'
+
 
 {
   "status": 200,
