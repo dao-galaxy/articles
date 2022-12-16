@@ -48,8 +48,14 @@ https://lapo.it/asn1js/
 
 
 
-# register a did & release fc
+# register a DID & release FC
 https://goerli.etherscan.io/tx/0x82e1c3aea3ac715fe7f23c72639c5a8b737f313cb0a2877dc737ef768074a329
+
+
+# db
+https://db-engines.com/en/ranking/key-value+store
+
+https://db-engines.com/en/ranking
 
 
 
