@@ -300,7 +300,7 @@ curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --requ
 https://goerli.etherscan.io/address/0xbbeaf5f51fdfaaec9af54135ec6fcab3c9ec8d6e#events
 
 
-```JSON
+```shell
 {
     "jsonrpc":"2.0",
     "id":74,
