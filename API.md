@@ -275,3 +275,75 @@ curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --requ
 '
 ```
 
+
+```shell
+curl https://eth-goerli.g.alchemy.com/v2/-s1zkDpkEmnjF4wIk8pLsiJBuxWelYV0 --request POST --header "Content-Type: application/json" --data 
+'
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getLogs",
+    "params":[
+        {
+            "fromBlock":"0x7C8760",
+            "toBlock":"0x7C8770",
+            "address":[
+                "0xBbeaF5f51fDfAaEc9Af54135Ec6FcaB3c9ec8d6e",
+                "0x2319b4a9d8097F58e517830E3329b7040B635415"
+            ]
+        }
+    ],
+    "id":74
+}
+'
+```
+
+https://goerli.etherscan.io/address/0xbbeaf5f51fdfaaec9af54135ec6fcab3c9ec8d6e#events
+
+
+```JSON
+{
+    "jsonrpc":"2.0",
+    "id":74,
+    "result":[
+        {
+            "address":"0xbbeaf5f51fdfaaec9af54135ec6fcab3c9ec8d6e",
+            "blockHash":"0x5c19e0ae6429b5fcffbcafe19701d91532d17eafedd135386cef9dbeaa7eabbb",
+            "blockNumber":"0x7c8764",
+            "data":"0x",
+            "logIndex":"0x82",
+            "removed":false,
+            "topics":[
+                "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+                "0x000000000000000000000000bdafc1b001965e1a45ecf960589e4c46cf81c423",
+                "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "0xbedcd1027afa1c5ddb27af17e4050526ec800ec78979f891b1e0f3e987fd3c8c"
+            ],
+            "transactionHash":"0x6a5bac15c85b38292dbabe6c7d14688e24efe2a4e1f3bb4fa91c9f193ca0cbc9",
+            "transactionIndex":"0x36"
+        },
+        {
+            "address":"0xbbeaf5f51fdfaaec9af54135ec6fcab3c9ec8d6e",
+            "blockHash":"0x5c19e0ae6429b5fcffbcafe19701d91532d17eafedd135386cef9dbeaa7eabbb",
+            "blockNumber":"0x7c8764",
+            "data":"0x",
+            "logIndex":"0x86",
+            "removed":false,
+            "topics":[
+                "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+                "0x000000000000000000000000bdafc1b001965e1a45ecf960589e4c46cf81c423",
+                "0x000000000000000000000000779a6b3f54e50228ca121529422cbdbd8bc2822b",
+                "0xbedcd1027afa1c5ddb27af17e4050526ec800ec78979f891b1e0f3e987fd3c8c"
+            ],
+            "transactionHash":"0x6a5bac15c85b38292dbabe6c7d14688e24efe2a4e1f3bb4fa91c9f193ca0cbc9",
+            "transactionIndex":"0x36"
+        }
+    ]
+}
+```
+![image](https://user-images.githubusercontent.com/32976079/208379376-f5f052c3-7e82-4208-8527-d01262fc7709.png)
+
+
+
+
+
+
