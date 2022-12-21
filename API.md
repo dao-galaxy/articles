@@ -261,10 +261,10 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
 curl https://goerli.diddao.io/api/order/nftHistoryData --request POST --header "Content-Type: application/json" --data \
 '
 {
-	"pageNum":1,
-	"pageSize":10,
-	"tokenId":"0x8b21efeb25303dcc086f181c72e9988c28d9feec7aefa2d1e8b99f68db6b2987",
-	"name":"123"
+    "pageNum":1,
+    "pageSize":10,
+    "tokenId":"0x8b21efeb25303dcc086f181c72e9988c28d9feec7aefa2d1e8b99f68db6b2987",
+    "name":"123"
 }
 '
 
