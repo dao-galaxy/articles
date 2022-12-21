@@ -254,8 +254,10 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
   }
 }
 
+```
 
-#### 9)获取nft历史交易
+#### 9获取nft历史交易
+```shell
 请求参数：
 {
 	"pageNum":1,
