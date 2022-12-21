@@ -253,6 +253,44 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
     "pages": 1 // 前端不要理会这个字段，后端代码库生成的
   }
 }
+
+
+#### 9)获取nft历史交易
+请求参数：
+{
+	"pageNum":1,
+	"pageSize":10,
+	"tokenId":"0xbedcd1027afa1c5ddb27af17e4050526ec800ec78979f891b1e0f3e987fd3c8c",
+	"name":"123"
+}
+
+返回结果：
+
+{
+    "status": 200,
+    "message": "SUCCESS",
+    "data": {
+        "records": [
+            {
+                "id": 12,
+                "type": "Transfer",
+                "price": "N/A",
+                "from": "0xe26f015ba6b8c400ce327ceebe34b717e6897e69",
+                "to": "0xbdafc1b001965e1a45ecf960589e4c46cf81c423",
+                "time": 1671417840
+            }
+        ],
+        "total": 2,
+        "size": 1,
+        "current": 1,
+        "orders": [],
+        "optimizeCountSql": true,
+        "searchCount": true,
+        "countId": null,
+        "maxLimit": null,
+        "pages": 2
+    }
+}
 ```
 
 
