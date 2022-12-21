@@ -258,11 +258,12 @@ curl https://goerli.diddao.io/api/order/orderList --request POST --header "Conte
 
 #### 9获取nft历史交易
 ```shell
-请求参数：
+请求:
+curl https://goerli.diddao.io/api/order/nftHistoryData --request POST --header "Content-Type: application/json" --data \
 {
 	"pageNum":1,
 	"pageSize":10,
-	"tokenId":"0xbedcd1027afa1c5ddb27af17e4050526ec800ec78979f891b1e0f3e987fd3c8c",
+	"tokenId":"0x8b21efeb25303dcc086f181c72e9988c28d9feec7aefa2d1e8b99f68db6b2987",
 	"name":"123"
 }
 
